@@ -12,12 +12,21 @@ public class Masaxista extends EquipoFutbol{
     public Masaxista(){
         super();
     }
+    /**
+     * Constructor clase Masaxista con los datos del mismo
+     * @param id 
+     * @param idade 
+     * @param nome 
+     * @param apelido 
+     * @param titulacion 
+     * @param anosExperiencia 
+     */
     public Masaxista(int id,int idade,String nome,String apelido,String titulacion,int anosExperiencia){
         super(id,idade,nome,apelido);
         this.titulacion=titulacion;
         this.anosExperiencia=anosExperiencia;
     }
-
+     
     public String getTitulacion() {
         return titulacion;
     }
