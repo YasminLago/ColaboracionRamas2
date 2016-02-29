@@ -1,15 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package colaboracionramas2;
 
 /**
  *
  * @author ylagorebollar
  */
-public class Masaxista {
+
+public class Masaxista extends EquipoFutbol{
+    private String titulacion;
+    private int anosExperiencia;
     
+    public Masaxista(){
+        super();
+    }
+    public Masaxista(int id,int idade,String nome,String apelido,String titulacion,int anosExperiencia){
+        super(id,idade,nome,apelido);
+        this.titulacion=titulacion;
+        this.anosExperiencia=anosExperiencia;
+    }
+
+    public String getTitulacion() {
+        return titulacion;
+    }
+
+    public void setTitulacion(String titulacion) {
+        this.titulacion = titulacion;
+    }
+
+    public int getAnosExperiencia() {
+        return anosExperiencia;
+    }
+
+    public void setAnosExperiencia(int anosExperiencia) {
+        this.anosExperiencia = anosExperiencia;
+    }
+    public void darMasaxes(){
+        System.out.println("O MASAXISTA da masaxes");
+    }
+
+    @Override
+    public String toString() {
+        String resposta= super.toString();
+        return "Masaxista{" + "titulacion=" + titulacion + ", anosExperiencia=" + anosExperiencia + '}';
+    }
+    
+}
 }
